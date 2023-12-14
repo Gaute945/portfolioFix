@@ -18,14 +18,20 @@ async function repoData(repo, owner, num) {
 		"https://api.github.com/repos/" + owner + "/" + repo
 	);
 	const json = await data.json();
+	console.log(json);
 
 	repoName = json.name;
 
 	description = json.description;
 
 	language = json.language;
-
-	license = json.license.key;
+	
+	if (json.license !== null) {
+		license = json.license.key;
+	}
+	else{
+		license = null
+	}
 
 	updated = json.updated_at;
 	const formattedDate = formatDate(updated); // Assign the result to formattedDate
@@ -81,4 +87,17 @@ repoData("UserIsland", "Gaute945", 1);
 repoData("ParkingSensor", "Gaute945", 2);
 repoData("randomGroupApp.js", "Gaute945", 3);
 repoData("Overtesting", "Gaute945", 4);
-repoData("NotYourFireAlarm", "Gaute945", 5);
+repoData("fireMovies", "Gaute945", 5);
+repoData("NotYourFireAlarm", "Gaute945", 6);
+repoData("Trenings-app", "Gaute945", 7);
+repoData("pokemon-json", "Gaute945", 8);
+repoData("random_autoclicker", "Gaute945", 9);
+repoData("slot_maschine", "Gaute945", 10);
+repoData("RandomGroupGenerator", "Gaute945", 11);
+repoData("Nettbutikk-root", "Gaute945", 12);
+repoData("portfolio", "Gaute945", 13);
+repoData("ValterKvitt", "Gaute945", 14);
+repoData("FunShutdown", "Gaute945", 15);
+repoData("codeCrack", "Gaute945", 16);
+repoData("BruteForceWList", "Gaute945", 17);
+repoData("flopyBird", "Gaute945", 18);
