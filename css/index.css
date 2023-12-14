@@ -3,3 +3,8 @@
     font-size: 1.17em; /* h3 font-size */
     font-weight: bold;
 }
+
+img {
+    height: 296px;
+    width: 296px;
+}
