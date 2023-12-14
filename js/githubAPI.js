@@ -19,7 +19,7 @@ async function repoData(repo, owner, num) {
 	);
 	const json = await data.json();
 
-	name = json.name;
+	repoName = json.name;
 
 	description = json.description;
 
@@ -30,7 +30,7 @@ async function repoData(repo, owner, num) {
 	updated = json.updated_at;
 	const formattedDate = formatDate(updated); // Assign the result to formattedDate
 
-	document.getElementById("name" + num).innerText = "name; " + name;
+	document.getElementById("name" + num).innerText = repoName;
 	document.getElementById("description" + num).innerText =
 		"description; " + description;
 	document.getElementById("language" + num).innerText = "language; " + language;
@@ -45,7 +45,7 @@ async function userData(user, num) {
 
 	avatar_url = json.avatar_url;
 
-	name = json.name;
+	userName = json.name;
 
 	login = json.login;
 
@@ -61,7 +61,7 @@ async function userData(user, num) {
 
 	const imageElement = document.getElementById("avatar_url" + num);
 	imageElement.src = avatar_url;
-	document.getElementById("name" + num).innerText = "name; " + name;
+	document.getElementById("userName" + num).innerText = userName;
 	document.getElementById("login" + num).innerText = "login; " + login;
 	document.getElementById("bio" + num).innerText = "bio; " + bio;
 	document.getElementById("followers" + num).innerText =
