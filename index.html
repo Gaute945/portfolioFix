@@ -21,7 +21,7 @@
 		</div>
 		<hr>
 		<div>
-			<h1>Projects</h1>
+			<h1>Top Projects</h1>
 			<ul>
 				<p id="name0" class="spaceAbove">name</p>
 				<li id="description0">description</li>
@@ -75,7 +75,7 @@
 				<li id="updated_at5">last updated</li>
 			</ul>
 		</div>
-		<div>
+		<!-- <div>
 			<ul>
 				<p id="name6" class="spaceAbove">name</p>
 				<li id="description6">description</li>
@@ -191,7 +191,26 @@
 				<li id="license18">license</li>
 				<li id="updated_at18">last updated</li>
 			</ul>
-		</div>
-		<script src="./js/githubAPI.js"></script>
+		</div> -->
+		<script src="githubAPI.js"></script>
+
+		<script id="__bs_script__">//<![CDATA[
+  (function() {
+    try {
+      var script = document.createElement('script');
+      if ('async') {
+        script.async = true;
+      }
+      script.src = 'http://HOST:3000/browser-sync/browser-sync-client.js?v=2.29.3'.replace("HOST", location.hostname);
+      if (document.body) {
+        document.body.appendChild(script);
+      } else if (document.head) {
+        document.head.appendChild(script);
+      }
+    } catch (e) {
+      console.error("Browsersync: could not append script tag", e);
+    }
+  })()
+//]]></script>
 	</body>
 </html>
