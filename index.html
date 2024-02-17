@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<script 
+		src="https://unpkg.com/htmx.org@1.9.10" 
+		integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" 
+		crossorigin="anonymous">
+		</script>
+		
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Portfolio</title>
-		<link rel="stylesheet" href="./css/index.css">
+		<title>HtmxPortfolio</title>
+		<link rel="stylesheet" href="css/index.css">
 	</head>
 	<body>
 		<div>
@@ -192,25 +198,6 @@
 				<li id="updated_at18">last updated</li>
 			</ul>
 		</div> -->
-		<script src="githubAPI.js"></script>
-
-		<script id="__bs_script__">//<![CDATA[
-  (function() {
-    try {
-      var script = document.createElement('script');
-      if ('async') {
-        script.async = true;
-      }
-      script.src = 'http://HOST:3000/browser-sync/browser-sync-client.js?v=2.29.3'.replace("HOST", location.hostname);
-      if (document.body) {
-        document.body.appendChild(script);
-      } else if (document.head) {
-        document.head.appendChild(script);
-      }
-    } catch (e) {
-      console.error("Browsersync: could not append script tag", e);
-    }
-  })()
-//]]></script>
+		<script src="githubAPI.js"></script>	
 	</body>
 </html>
