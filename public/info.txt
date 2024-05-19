@@ -1,0 +1,3 @@
+`public`
+directory is used for storing any static assets that are required by your application (such as
+images or CSS files)

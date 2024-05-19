@@ -1,0 +1,5 @@
+[[38;2;88;101;242marRPC[0m > [38;2;254;231;92mipc[0m] listening at /run/user/1000/discord-ipc-0
+[[38;2;88;101;242marRPC[0m > [38;2;235;69;158mwebsocket[0m] listening on 6463
+[[38;2;88;101;242marRPC[0m > [38;2;237;66;69mprocess[0m] started
+[855888:0518/233141.437829:ERROR:atom_cache.cc(229)] Add chromium/from-privileged to kAtomsToCache
+[855888:0519/013923.838502:ERROR:atom_cache.cc(229)] Add WM_CHANGE_STATE to kAtomsToCache

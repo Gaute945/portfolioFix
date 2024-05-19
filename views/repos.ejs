@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>	
+  </head>
+  <body>
+    <div class="portfolio-container">
+      <% json.forEach((repo) => { %>
+      <div class="project-card">
+        <img src="placeholder.png" alt="Project 1 Image">
+      <h2><%= repo.name %></h2>
+        <p><%= repo.description %></p>
+      </div>
+      <% }) %>		
+    </div>
+  </body>
+</html>

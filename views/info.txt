@@ -1,0 +1,2 @@
+`views` directory houses all of your views (e.g., index.html,
+login.html)
