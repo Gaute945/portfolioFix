@@ -1,18 +1,21 @@
 {
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.19.2",
-    "vue": "^3.4.27",
-    "vue-router": "^4.3.2"
+    "express": "^4.19.2"
   },
   "name": "portfoliofix",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss build ./src/input.css -o ./public/index.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
 }
+

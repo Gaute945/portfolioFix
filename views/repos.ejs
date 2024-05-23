@@ -2,12 +2,12 @@
 <html>
   <head>
     <title>My Portfolio</title>	
+    <link rel="stylesheet" href="index.ejs">
   </head>
   <body>
     <div class="portfolio-container">
       <% json.forEach((repo) => { %>
-      <div class="project-card">
-        <img src="placeholder.png" alt="Project 1 Image">
+      <div class="project-card"> 
       <h2><%= repo.name %></h2>
         <p><%= repo.description %></p>
       </div>
