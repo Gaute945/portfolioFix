@@ -1,2 +1,4 @@
-`views` directory houses all of your views (e.g., index.html,
+`views` directory houses all of your visable pages (e.g., index.html,
 login.html)
+
+`public` houses all public assests
