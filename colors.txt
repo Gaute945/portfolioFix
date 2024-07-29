@@ -1,0 +1,6 @@
+Very dark blue #2C0093
+magenta #E100EB
+violet #9500ea
+blue #0004EB
+pink #EB006F
+Soft violet #B14EEB
