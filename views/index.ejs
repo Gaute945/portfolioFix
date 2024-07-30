@@ -3,24 +3,28 @@
   <head>
     <title>My Portfolio</title> 
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
   </head>
-  <body class="w-full h-full bg-gradient-to-tl from-black to-violet">
-    <div class="grid grid-cols-3 grid-rows-3 place-items-center h-screen">
-      <div class="col-start-2 row-start-2">
-        <h1 class="text-violet text-9xl font-serif">Gaute</h1> 
-      </div>
-      <div class="col-start-2 row-start-2 flex justify-end items-end h-full">
-        <div class="flex justify-center">
-          <a href="https://github.com/Gaute945">Github</a> 
-          <a class="border-l border-gray-200 mr-4" href="#gauteg">Discord</a> 
-          <a class="border-l border-gray-200 mr-4" href="mailto:mrboobai@proton.me">Mail</a> 
-        </div>
-      </div>
+  <body>
+    <div class="w-full h-full bg-gradient-to-tl from-black to-violet">
+      <div class="grid grid-cols-3 grid-rows-3 place-items-center h-screen">
+        <div class="col-start-2 row-start-2">
+          <h1 class="text-violet text-12xl font-dancing">Gaute</h1> 
+          <div class="flex justify-center text-xl">
+            <form action='/repos' method='get'>
+              <button type="submit">
+                <h1>Github</h1>
+              </button> 
+            </form>
+            <span class="mx-2">&#8226;</span>
+            <a class="space-5" href="#gauteg">Discord@gauteg</a>
+            <span class="mx-2">&#8226;</span>
+            <a class="space-5" href="mailto:mrboobai@proton.me">Mail</a> 
+          </div>
+        </div> 
+      </div> 
     </div>
-    <form action='/repos' method='get'>
-      <button type="submit">
-        <h1>Goto Repos</h1>
-      </button> 
-    </form>
   </body>
 </html>

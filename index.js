@@ -17,9 +17,10 @@ app.post("/", (req, res) => {
 app.get('/repos', async (req, res) => { 
   async function repoData() {
     const data = await fetch(
-      "https://api.github.com/users/Gaute945/repos"
+      "https://api.github.com/users/Gaute945/repos",
     );
-    const json = await data.json(); 
+    const json = await data.json();
+    console.log(json);
     return json;
   };
 
